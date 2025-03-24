@@ -1,5 +1,6 @@
 
 import change_text from "../src/utils/example"
+import Link from 'next/link'
 
 export default function index() {
     /**
@@ -13,7 +14,10 @@ export default function index() {
     return (
         <div>
             <h1 id="main">Hello, Next.js!</h1>
+            <h1>Home</h1>
+            <Link href="/about">About</Link>
             <button onClick={() => change_text("main")}>change upper text</button>
         </div>
     )
 }
+

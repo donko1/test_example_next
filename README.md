@@ -43,6 +43,12 @@ Use following command to install jest and update your package.json with followin
 yarn add -D jest jest-environment-jsdom @testing-library/react @testing-library/dom @testing-library/jest-dom ts-node
 
 yarn create jest@latest
+
+yarn add @playwright/test
+
+yarn playwright install
+
+yarn test
 ```
 
 ```json
