@@ -1,0 +1,9 @@
+// This code 4 some fetch
+  test('the data is peanut butter', () => {
+    return expect(fetchData()).resolves.toBe('peanut butter');
+  });
+  
+  test('the fetch fails with an error', () => {
+    return expect(badFetchData()).rejects.toMatch('error');
+  });
+  
